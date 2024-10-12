@@ -1,0 +1,18 @@
+#spring.application.name=securitytest
+spring:
+  application:
+    name: securitytest
+  datasource:
+    url: jdbc:postgresql://localhost:5432/securitytest
+    username: postgres
+    password: saimun
+    driver-class-name: org.postgresql.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update  # options: validate, update, create, create-drop
+      show-sql: true  # to log the SQL queries
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+server:
+  port: 8081
