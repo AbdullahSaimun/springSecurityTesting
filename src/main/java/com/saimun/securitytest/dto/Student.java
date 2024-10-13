@@ -12,4 +12,12 @@ public class Student {
 	private String name;
 	private int roll;
 
+	@Override
+	public String toString() {
+		return "Student{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", roll=" + roll +
+				'}';
+	}
 }
