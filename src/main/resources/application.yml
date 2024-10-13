@@ -14,5 +14,9 @@ spring:
       properties:
         hibernate:
           dialect: org.hibernate.dialect.PostgreSQLDialect
+  security:
+    user:
+      name: saimun
+      password: password
 server:
   port: 8081
